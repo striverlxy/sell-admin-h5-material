@@ -1,6 +1,7 @@
 import { makeStyles, Paper } from '@material-ui/core'
 import React from 'react'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { useHistory } from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
@@ -36,9 +37,16 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 700,
         fontSize: 20,
         '& span': {
-            fontWeight: 300,
             fontSize: 10
         }
+    },
+    address: {
+        width: '100%',
+        height: '30%',
+        display: 'flex',
+        justifyContent: "flex-start",
+        alignItems: "center",
+        fontSize: 10
     },
     otherInfo: {
         width: '100%',
@@ -46,6 +54,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
+        fontSize: 12
     },
     user: {
         display: 'flex',
@@ -64,9 +73,12 @@ export default function Device() {
                     </div>
                     待处理
                 </div>
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
+                </div>
                 <div className={classes.otherInfo}>
                     <div className={classes.user}>
-                        <PersonOutlineIcon />10001
+                        <PersonOutlineIcon fontSize="small" />10001
                     </div>
                     2020-11-09 11:00:00
                 </div>
@@ -78,9 +90,12 @@ export default function Device() {
                     </div>
                     待处理
                 </div>
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
+                </div>
                 <div className={classes.otherInfo}>
                     <div className={classes.user}>
-                        <PersonOutlineIcon />10001
+                        <PersonOutlineIcon fontSize="small" />10001
                     </div>
                     2020-11-09 11:00:00
                 </div>
@@ -92,35 +107,12 @@ export default function Device() {
                     </div>
                     待处理
                 </div>
-                <div className={classes.otherInfo}>
-                    <div className={classes.user}>
-                        <PersonOutlineIcon />10001
-                    </div>
-                    2020-11-09 11:00:00
-                </div>
-            </Paper><Paper elevation={10} className={classes.paper}>
-                <div className={classes.title}>
-                    <div>
-                        <span>No. </span>36475820237489234
-                    </div>
-                    待处理
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
                 </div>
                 <div className={classes.otherInfo}>
                     <div className={classes.user}>
-                        <PersonOutlineIcon />10001
-                    </div>
-                    2020-11-09 11:00:00
-                </div>
-            </Paper><Paper elevation={10} className={classes.paper}>
-                <div className={classes.title}>
-                    <div>
-                        <span>No. </span>36475820237489234
-                    </div>
-                    待处理
-                </div>
-                <div className={classes.otherInfo}>
-                    <div className={classes.user}>
-                        <PersonOutlineIcon />10001
+                        <PersonOutlineIcon fontSize="small" />10001
                     </div>
                     2020-11-09 11:00:00
                 </div>
@@ -132,9 +124,63 @@ export default function Device() {
                     </div>
                     待处理
                 </div>
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
+                </div>
                 <div className={classes.otherInfo}>
                     <div className={classes.user}>
-                        <PersonOutlineIcon />10001
+                        <PersonOutlineIcon fontSize="small" />10001
+                    </div>
+                    2020-11-09 11:00:00
+                </div>
+            </Paper>
+            <Paper elevation={10} className={classes.paper}>
+                <div className={classes.title}>
+                    <div>
+                        <span>No. </span>36475820237489234
+                    </div>
+                    待处理
+                </div>
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
+                </div>
+                <div className={classes.otherInfo}>
+                    <div className={classes.user}>
+                        <PersonOutlineIcon fontSize="small" />10001
+                    </div>
+                    2020-11-09 11:00:00
+                </div>
+            </Paper>
+            <Paper elevation={10} className={classes.paper}>
+                <div className={classes.title}>
+                    <div>
+                        <span>No. </span>36475820237489234
+                    </div>
+                    待处理
+                </div>
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
+                </div>
+                <div className={classes.otherInfo}>
+                    <div className={classes.user}>
+                        <PersonOutlineIcon fontSize="small" />10001
+                    </div>
+                    2020-11-09 11:00:00
+                </div>
+            </Paper>
+            <Paper elevation={10} className={classes.paper}>
+                <div className={classes.title}>
+                    <div>
+                        <span>No. </span>36475820237489234
+                    </div>
+                    待处理
+                </div>
+                <div className={classes.address}>
+                    <LocationOnIcon fontSize="small" />南京市雨花台区梅山村邱村69号
+                </div>
+                <div className={classes.otherInfo}>
+                    <div className={classes.user}>
+                        <PersonOutlineIcon fontSize="small" />10001
                     </div>
                     2020-11-09 11:00:00
                 </div>
