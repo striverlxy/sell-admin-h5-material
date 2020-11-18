@@ -62,11 +62,17 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export default function Device() {
+export default function SellOrder() {
     const classes = useStyles()
+
+    const history = useHistory()
+    const gotoDetail = () => {
+        history.push('/businessGroup/sellOrder/detail')
+    }
+
     return (
         <div className={classes.root}>
-            <Paper elevation={10} className={classes.paper}>
+            <Paper elevation={10} className={classes.paper} onClick={() => gotoDetail()}>
                 <div className={classes.title}>
                     <div>
                         <span>No. </span>36475820237489234

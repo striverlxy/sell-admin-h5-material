@@ -12,9 +12,14 @@ const router = [
         component: lazy(() => import("../pages/businessGroup"))
     },
     {
-        path: "/businessGroup/device",
-        name: '业务分组',
-        component: lazy(() => import("../pages/device"))
+        path: "/businessGroup/sellOrder",
+        name: '销售单',
+        component: lazy(() => import("../pages/sellOrder"))
+    },
+    {
+        path: "/businessGroup/sellOrder/detail",
+        name: '销售单详情',
+        component: lazy(() => import("../pages/sellOrder/detail"))
     }
 ]
 

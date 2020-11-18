@@ -29,7 +29,7 @@ export default function BusinessGroup() {
 
     const history = useHistory()
     const handleClick = () => {
-        history.push('/businessGroup/device')
+        history.push('/businessGroup/sellOrder')
     }
 
     return (
